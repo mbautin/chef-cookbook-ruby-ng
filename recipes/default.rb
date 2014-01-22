@@ -12,7 +12,7 @@ end
 
 apt_preference 'ruby-ng-01-disable_by_default' do
   glob '*'
-  pin "release o=LP-PPA-brightbox-#{ma,e}"
+  pin "release o=LP-PPA-brightbox-#{name}"
   pin_priority '-1'
 end
 

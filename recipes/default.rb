@@ -3,7 +3,7 @@ include_recipe 'apt'
 name = "ruby-ng#{'-experimental' if node['ruby-ng']['experimental']}"
 
 apt_repository "brightbox-#{name}" do
-  uri 'http://ppa.launchpad.net/brightbox/#{name}/ubuntu'
+  uri "http://ppa.launchpad.net/brightbox/#{name}/ubuntu"
   distribution node['lsb']['codename']
   components [ 'main' ]
   keyserver 'keyserver.ubuntu.com'

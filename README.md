@@ -10,17 +10,19 @@ Platform: Ubuntu
 
 Cookbooks:
  - `apt`
+ - `build-essential` (included by `ruby-ng::dev` recipe)
+
+Recipes
+-------
+
+ - `ruby-ng::default` (`ruby-ng`) - installs Ruby runtime
+ - `ruby-ng::dev` - installs Ruby runtime and development libraries
 
 Attributes
 ----------
 
  - `ruby-ng::experimental` (default: false) - use `ruby-ng-experimental` PPA
  - `ruby-ng::ruby_version` (default: 2.1) - Ruby version to install
- - `ruby-ng::install_ruby_dev` (default: false) - install Ruby developmant package
-
-Usage
------
-Just include `ruby-ng` in your node's `run_list`:
 
 License and Authors
 -------------------

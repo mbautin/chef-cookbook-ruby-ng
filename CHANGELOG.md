@@ -1,6 +1,11 @@
 Changes
 =======
 
+0.3.0
+-----
+
+ - Drop `install_ruby_dev` attribute, add `ruby-ng::dev` recipe instead
+
 0.2.0
 -----
 

@@ -15,7 +15,8 @@ Attributes
 ----------
 
  - `ruby-ng::experimental` (default: false) - use `ruby-ng-experimental` PPA
- - `ruby-ng::ruby_version` (default: 1.9.1 - which actually means 1.9.3) - Ruby package to install
+ - `ruby-ng::ruby_version` (default: 2.1) - Ruby version to install
+ - `ruby-ng::install_ruby_dev` (default: false) - install Ruby developmant package
 
 Usage
 -----

@@ -23,7 +23,7 @@ apt_preference 'ruby-ng-02-enable_for_ruby' do
 end
 
 package "ruby#{node['ruby-ng']['ruby_version']}"
-package 'rubygems'
+package "ruby#{node['ruby-ng']['ruby_version']}-dev" if node['ruby-ng']['install_ruby_dev']
 
 gem_package 'bundler' do
   gem_binary '/usr/bin/gem'

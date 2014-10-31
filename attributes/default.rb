@@ -1,2 +1,3 @@
 default['ruby-ng']['experimental'] = false
-default['ruby-ng']['ruby_version'] = '1.9.1' # which is 1.9.3
+default['ruby-ng']['install_ruby_dev'] = false
+default['ruby-ng']['ruby_version'] = '2.1'

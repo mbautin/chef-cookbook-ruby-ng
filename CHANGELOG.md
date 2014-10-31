@@ -1,13 +1,14 @@
-ruby-ng CHANGELOG
-=================
+Changes
+=======
 
-This file is used to list changes made in each version of the ruby-ng cookbook.
-
-0.1.0
+0.2.0
 -----
-- [your_name] - Initial release of ruby-ng
 
-- - -
-Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
+ - Default to Ruby 2.1
+ - Switch to install ruby-dev
+ - Don't install rubygems package
 
-The [Github Flavored Markdown page](http://github.github.com/github-flavored-markdown/) describes the differences between markdown on github and standard markdown.
+
+0.1.1 and before
+----------------
+(history would need to be reconstructed)

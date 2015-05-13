@@ -24,7 +24,14 @@ end
 
 package "ruby#{node['ruby-ng']['ruby_version']}"
 
+bundler_version = node['ruby-ng']['bundler_version']
+
 gem_package 'bundler' do
   gem_binary '/usr/bin/gem'
   options '-n /usr/bin'
+  if bundler_version == 'latest'
+    action :upgrade
+  elsif bundler_version
+    version bundler_version
+  end
 end

@@ -1,0 +1,29 @@
+---
+driver:
+  name: vagrant
+  customize:
+    cpus: 2
+    memory: 1024
+    cpuexecutioncap: 75
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: ubuntu-12.04
+
+suites:
+  - name: testkitchen_ruby_ng_cookbook
+    run_list:
+      - recipe[ruby-ng_test]
+      - recipe[minitest-handler]
+    attributes:
+      minitest:
+        recipes:
+          - ruby-ng_test::default
+      ruby-ng:
+        ruby_version: 2.1
+        # 1.9.8 is the newest version as of 05/13/2015, but we are testing if we can install
+        # a specific older version.
+        bundler_version: 1.9.7
+        
